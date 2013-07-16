@@ -1,0 +1,50 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#container {
+width: 1300px; 
+height: 800px;
+background: #ffffff;
+}
+
+#header {
+background: #DDDDDD;
+height: 55px;
+}
+
+#leftBar {
+float: left; 
+width: 150px;
+height: 800px; 
+background: #EBEBEB; 
+}
+
+#content {
+float:left;
+width:600px;
+height: 800px;
+background-color: #cdcde6;
+}
+
+#rightBar { 
+float:right; 
+width: 550px; 
+height: 800px;
+background: #EBEBEB; 
+}
+
+#footer { 
+clear:both;
+background:#DDDDDD;
+} 
+
+.btn
+{
+width: 150px;
+height: 35px;
+padding:5px 25px; 
+background: #4479BA;
+}
+.nav {
+	background-color: rgb(206, 215, 224);
+}
