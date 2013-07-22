@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="container">
+		<div class="tabbable">
+			<div class="span2 offset well">
+				<ul class="nav nav-tabs nav-stacked">
+					<li><a href="#new" data-toggle="tab" class="style">New Policy</a></li>
+					<li><a href="#library" data-toggle="tab" class="style">Policy Library</a></li>
+					<li><a href="#policy" data-toggle="tab" class="style">Your Policy</a></li>
+					<li><a href="#report" data-toggle="tab" class="style">Report</a></li>
+					<li><a href="#search" data-toggle="tab" class="style">Search</a></li>
+					<li><a href="#archive" data-toggle="tab" class="style">Archive</a></li>
+				</ul>
+			</div>
+			<div class="span6 offset well">
+				<div class="tab-content">
+					<div class="tab-pane active" id="new">
+						<%= render :partial => "policy/form" %>
+					</div>
+					<div class="tab-pane" id="library">
+						<p>List of Existing Policy</p>
+					</div>
+					<div class="tab-pane" id="policy">
+						<p>list of created Policies</p>
+					</div>
+					<div class="tab-pane" id="report">
+						<p>Generate Reports</p>
+					</div>
+					<div class="tab-pane" id="search">
+						<p>Quick Search</p>
+					</div>
+					<div class="tab-pane" id="archive">
+						<p>Archived Policies</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

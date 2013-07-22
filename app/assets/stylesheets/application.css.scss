@@ -1,18 +1,59 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- *= require_tree .
- */
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+* or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the top of the
+* compiled file, but it's generally better to create a new file per style scope.
+*
+*= require_self
+*= require_tree .
+*/
 @import "bootstrap";
 @import "bootstrap-responsive";
 body {
-	background-color: rgb(206, 215, 224);
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 13px;
+font-weight: normal;
+line-height: 18px;
+}
+.container {
+width: 940px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.row {
+margin-left: 940px;
+height: 95px;
+}
+.navbar navbar-inverse navbar-inner nav-collapse collapse nav{
+color: 'red';
+}
+.dropdown-menu:after {
+border: none !important;
+content: "" !important;
+}
+.navbar .nav > li > .dropdown-menu:before { border-bottom: none; }
+
+.dropdown-menu{
+color: #0B6138;
+float: left;
+display: none;
+position: absolute;
+top: 40px;
+z-index: 900;
+min-width: 160px;
+max-width: 220px;
+margin-left: 0px;
+margin-right: 0px;
+padding: 6px 0px;
+border-color: rgba(0, 0, 0, 0.2);
+border-style: solid;
+border-width: 0px 1px 1px;
+border-radius: 0px 0px 6px 6px;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+background-clip: padding-box;
 }
