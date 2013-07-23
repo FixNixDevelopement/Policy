@@ -1,8 +1,23 @@
 Policy::Application.routes.draw do
-resources :dashboard;
-resources :policy;
+
+resources :businessunits
+resources :archieve
+resources :reports
+resources :exception
+resources :groups
+resources :control
+resources :dashboard
+resources :policy
+resources :admin
+get "admin" => "admin#index"
 get "dashboard" => "dashboard#index"
 get "policy" => "policy#index"
+get "control" => "control#index"
+get "bu" => "businessunits#index"
+get "groups" => "groups#index"
+get "archieve" => "archieve#index"
+get "reports" => "reports#index"
+get "exception" => "exception#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -52,7 +67,7 @@ get "policy" => "policy#index"
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'policy#index'
+  root :to => 'dashboard#index'
 
   # See how all your routes lay out with "rake routes"
 
